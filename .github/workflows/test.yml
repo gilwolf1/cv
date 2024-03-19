@@ -15,4 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Greet workflow runner'
-        run: echo "Hello ${{ github.event.inputs.yourName }}, you are ${{ github.event.inputs.yourAge }} years old"
+        run: |
+          echo "Hello ${{ github.event.inputs.yourName }}, 
+            you are ${{ github.event.inputs.yourAge }} years old"
