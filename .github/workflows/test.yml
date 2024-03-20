@@ -6,15 +6,15 @@ on:
         description: 'What is your name?'
         required: true
         default: 'Miguel'
-      yourAge:
-        description: 'What is your age?'
-        required: false
-        default: '10'
+  push:
+    branches:
+      - master
 jobs:
   print-to-screen:
     runs-on: ubuntu-latest
     steps:
       - name: 'Greet workflow runner'
         run: |
-          echo "Hello ${{ github.event.inputs.yourName }}, 
-            you are ${{ github.event.inputs.yourAge }} years old"
+          echo "Hello Miguel, you are 26 years old"
+      - name: 'Copy repo code'
+        uses: actions/checkout@v3
