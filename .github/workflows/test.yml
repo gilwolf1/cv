@@ -15,4 +15,3 @@ jobs:
     steps:
       - run: |
           echo "Hello Miguel, you are 26 years old"
-      - uses: actions/checkout@v3
