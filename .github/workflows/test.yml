@@ -13,8 +13,6 @@ jobs:
   print-to-screen:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Greet workflow runner'
-        run: |
+      - run: |
           echo "Hello Miguel, you are 26 years old"
-      - name: 'Copy repo code'
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
