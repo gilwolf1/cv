@@ -9,7 +9,7 @@ on:
   push:
     branches:
       - master
-jobs:
+jobSDADAFAFs:
   print-to-screen:
     runs-on: ubuntu-latest
     steps:
